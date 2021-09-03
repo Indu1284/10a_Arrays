@@ -1,68 +1,70 @@
 package com.cc.java;
 
+import java.util.Arrays;
+
 public class App {
     public static void main(String[] args) {
       // // Deklaration: int
-		// int [] intArr = new int [4];
-		// ausgabe("Länge Array: " + intArr.length);	
+		 int [] intArr = new int [4];
+		 ausgabe("Länge Array: " + intArr.length);	
 		
 		// // Index
-		// ausgabe("3. Element " + intArr[2]);
+		ausgabe("3. Element " + intArr[2]);
 		
-		// intArr[0] = 10;
-		// ausgabe("1. Element " + intArr[0]);
-		// intArr[intArr.length - 1] = 11;
+		 intArr[0] = 10;
+		 ausgabe("1. Element " + intArr[0]);
+		intArr[intArr.length - 1] = 11;
 		
-		// for (int i = 0; i < intArr.length; i++) {
-		// 	ausgabe("Element: " + i + " : "+ intArr[i]);
-		// }
+		 for (int i = 0; i < intArr.length; i++) {
+		 	ausgabe("Element: " + i + " : "+ intArr[i]);
+		}
 			
 		
 		// Deklaration: String
 		//String [] strArr = new String [2];
 				
-		// String [] strArr = {"Hallo","Holger"};
+		 String [] strArr = {"Hallo","Holger"};
 		
-		// for (int i = 0; i < strArr.length; i++) {
-		// 	ausgabe(strArr[i]);
-		// }
+		for (int i = 0; i < strArr.length; i++) {
+			ausgabe(strArr[i]);
+		 }
 		
 		
 		// Mehrdimensionale Arrays
 		//String [][] strMdArr = new String [2][2];
 		
-		// String [][] strMdArr = {{"Max","Mustermann"},{"Karin","Musterfrau"}};
+		 String [][] strMdArr = {{"Max","Mustermann"},{"Karin","Musterfrau"}};
 		
 		// {{0,2,1},{1,0,0}}  x|y|z
 		
-		// ausgabe(strMdArr[0][0]);
-		// ausgabe(strMdArr[1][1]);
+		ausgabe(strMdArr[0][0]);
+		 ausgabe(strMdArr[1][1]);
 		
 		// nested loops
-		// for (int i = 0; i < strMdArr.length; i++) {
-		// 	for (int j = 0; j < strMdArr.length; j++) {
-		// 		ausgabe("Indizes i/j: " + "i:" +  i + " j:"+ j + " " + strMdArr[i][j]);
-		// 	}
-		// }
+		for (int i = 0; i < strMdArr.length; i++) {
+			for (int j = 0; j < strMdArr.length; j++) {
+				ausgabe("Indizes i/j: " + "i:" +  i + " j:"+ j + " " + strMdArr[i][j]);
+		 	}
+		}
 		
 		
 //		// Deklaration | Chars
-		// char [] letters = {'d','c','a','A','b'};
+		 char [] letters = {'d','c','a','A','b'};
 		
-		// ausgabe("---- vor Sortierung: ----");
+		 ausgabe("---- vor Sortierung: ----");
 
-		// for (int i = 0; i < letters.length; i++) {
-		// 	ausgabe(String.valueOf(letters[i]));	
-		// }
+		 for (int i = 0; i < letters.length; i++) {
+			ausgabe(String.valueOf(letters[i]));	
+		}
 //		
 		// Sortierfkt. --> sortiertes Array
 		
-		// Arrays.sort(letters);  // Statische Klasse | Methode
+		 Arrays.sort(letters);  // Statische Klasse | Methode
 		
-		// ausgabe("---- nach Sortierung: ----");
-		// for (int i = 0; i < letters.length; i++) {
-		// 	ausgabe(String.valueOf(letters[i]));	
-		// }
+		ausgabe("---- nach Sortierung: ----");
+		 for (int i = 0; i < letters.length; i++) {
+		 	ausgabe(String.valueOf(letters[i]));	
+		 }
 
 //		
 		// ausgabe("");
